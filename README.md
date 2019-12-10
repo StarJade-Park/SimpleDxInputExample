@@ -13,7 +13,7 @@ Simple DirectInput example
   GInput::Update();
 ```
 
-2. Release(Choose one of the methods here)
+3. Release(Choose one of the methods here)
 ```c++
   GInput::Release();
 ```
@@ -24,4 +24,11 @@ Simple DirectInput example
 
 ```c++
   // pInputInstance release
+```
+
+4. Use
+
+```c++
+  GInput::Get()->IsKeyDown(GKEY_DEF_0); // keyboard input
+  GInput::Get()->IsMouseDown(GMOUSE_BUTTONS_LEFT); // mouse input
 ```
